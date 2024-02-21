@@ -1,0 +1,10 @@
+app:
+  storage-file: "./storage.json"
+http:
+  host: "0.0.0.0:8000"
+  read-timeout: "10s"
+  write-timeout: "10s"
+  read-header-timeout: "5s"
+# write = время на чтение тела запроса + время на формировани ответа (5с + 5с = 10с)
+# read = время на чтение заголовка + время на чтение тела запроса (5с + 5с = 10с)
+# read-header = время на чтение заголовка (5с)
